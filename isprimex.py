@@ -10,26 +10,15 @@ def isprime(x):
     else:
         print("False! It is not a prime number.")
 
-def oddEven(x):
-    if x%2==0:
-        print("This number is an even number.")
-    else:
-        print("This number is an odd number.")
-
 while True:
     x = int(input("Enter a number:"))
     if x>0:
-        oddEven(x)
+        if x % 2 == 0:
+            print("This number is an even number.")
+        else:
+            print("This number is an odd number.")
     if x>1:
         isprime(x)
         break
     else:
         print("Please enter a number higher than 1.")
-
-
-
-
-
-
-
-
