@@ -1,10 +1,10 @@
 def isprime(x):
-    sayac = 0
+    counter = 0
     for i in range(2, x):
         if x % i == 0:
-            sayac = sayac + 1
+            counter = counter + 1
 
-    if sayac == 0:
+    if counter == 0:
         print("True! It is a prime number.")
 
     else:
